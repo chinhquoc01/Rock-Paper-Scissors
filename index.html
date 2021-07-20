@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Rock-Paper-Scissors</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weaponPick">
+        <div class="textChoose">Choose your weapon</div>
+        <div class="weaponList">
+            
+            <button class="weapon" onclick="chooser(this.id)" id="rock">
+                <img src="rock.png" alt="rockIMG">
+                <p>Rock</p>
+            </button>
+            <button class="weapon" onclick="chooser(this.id)" id="paper">
+                <img src='paper.png' alt="paperIMG">
+                <p>Paper</p>
+            </button>
+            <button class="weapon" onclick="chooser(this.id)" id="scissors">
+                <img src='scissors.png' alt="scissorsIMG">
+                <p>Scissors</p>
+            </button>
+        </div>
+    </div> 
+    <br>
+    <br>
+    
+    <div class="score">
+        <div class="playerScore">
+            <div id="playerScoreID"></div>
+            <div>playerScore</div>
+        </div>
+        <div class="botScore">
+            <div id="botScoreID"></div>
+            <div>botScore</div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+    <div class="playGround">
+        <div class="displayResult">
+            <div class="chosen">
+                <div class="imgframe" id="frame1">
+                    <img id="playerWeapon">
+                </div>
+                <p class="playerWeapon">playerWeapon</p>
+            </div>
+            <div class="chosen">
+                <div class="imgframe">
+                    <img id="botWeapon">
+                </div>
+                <p clas="botWeapon">botWeapon</p>
+            </div>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src = "scripts.js"></script>
+</body>
